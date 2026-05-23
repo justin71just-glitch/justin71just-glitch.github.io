@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronHill Scroll Animation | Codegrid</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-img">
+            <img src="0107a229-56d7-41ad-97d3-f233d4133f65.png"
+                 alt="" />
+        </div>
+
+        <div class="hero-header">
+            <h1>Justin and Han</h1>
+            <p style="font-family: 'Fredoka One', cursive; font-weight: 400; letter-spacing: 0.02em;">han's personal website</p>
+        </div>
+
+        <canvas class="hero-canvas"></canvas>
+
+        <div class="hero-content">
+            <div class="hero-content-bg"></div>
+            <div class="welcome-group">
+                <div class="chat-bubble hero-bubble-3 tail-br float-d">Welcome!</div>
+                <div class="chat-bubble hero-bubble-1 tail-br float">Hello there!</div>
+                <div class="hero-welcome">WELCOME TO MY WEBSITE</div>
+                <div class="chat-bubble hero-bubble-2 tail-bl float-d">Nice to meet you</div>
+                <div class="chat-bubble hero-bubble-4 tail-bl float">Let's go!</div>
+            </div>
+            <p class="sub-text">I am someone who loves innovation, beauty, inclusiveness and endless possibilities, and I am willing to embrace every experience in life.</p>
+            <p class="third-text">Looking forward to our encounter.</p>
+            <img class="walker" src="character.png" alt="walker" />
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="percent" id="percent">0%</span>
+        </div>
+    </section>
+
+    <section class="sticky-cards">
+        <div class="card" id="card-1" style="background-image: url('card1-bg.png'); background-size: cover; background-position: center;">
+            <div class="col" style="display: flex; flex-direction: column; justify-content: center; padding: 2.5rem 2rem; gap: 1.5rem;">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; width: 100%;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(2rem, 4.5vw, 4rem); font-weight: 900; color: #000; line-height: 1; white-space: nowrap;">Justin Han</span>
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 900; color: #F4B000; line-height: 1; white-space: nowrap; margin-left: auto; padding-left: 1.5rem;">Student</span>
+                </div>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 700; color: #000; line-height: 1.4; text-align: left; margin: 0;">
+                    <i style="font-style: italic;">CUFE</i> student specializing in <i style="font-style: italic;">Finance</i>.
+                </p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 400; color: #000; line-height: 1.45; text-align: left; margin: 0;">
+                    Finance student. Communist Youth League member.<br>
+                    AI enthusiast and frontier innovation pursuer.<br>
+                    Passionate about all forms of beauty.<br>
+                    Devoted to creating a world of equality, freedom,<br>
+                    happiness, and sustainable development for all.
+                </p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="card" id="card-2" style="background-image: url('card2-bg.png'); background-size: cover; background-position: center;">
+            <div class="col" style="display: flex; flex-direction: column; justify-content: center; padding: 2.5rem 2rem; gap: 1.5rem;">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; width: 100%;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(2rem, 4.5vw, 4rem); font-weight: 900; color: #000; line-height: 1; white-space: nowrap;">Justin Han</span>
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 900; color: #F4B000; line-height: 1; white-space: nowrap; margin-left: auto; padding-left: 1.5rem;">Finance</span>
+                </div>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 700; color: #000; line-height: 1.4; text-align: left; margin: 0;">
+                    <i style="font-style: italic;">CUFE</i> School of <i style="font-style: italic;">Finance</i> student.
+                </p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 400; color: #000; line-height: 1.45; text-align: left; margin: 0;">
+                    Trained through specialized theoretical courses such as Finance, frontier technology-integrated courses such as Financial Machine Learning, value-enhancing courses such as Financial Statement Analysis, and foundational studies including Advanced Algebra and Probability Theory.
+                </p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 400; color: #000; line-height: 1.45; text-align: left; margin: 0;">
+                    Passionate about observing real-world economic changes and the impact of frontier technologies on the economy. Grounded in the present, yet driven to explore the deepest laws of finance — or, more fundamentally, of money.
+                </p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="card" id="card-3" style="background-image: url('card3-bg.png'); background-size: cover; background-position: center;">
+            <div class="col" style="display: flex; flex-direction: column; justify-content: center; padding: 2.5rem 2rem; gap: 1.5rem;">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; width: 100%;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(2rem, 4.5vw, 4rem); font-weight: 900; color: #000; line-height: 1; white-space: nowrap;">Justin Han</span>
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 900; color: #F4B000; line-height: 1; white-space: nowrap; margin-left: auto; padding-left: 1.5rem;">Innovation</span>
+                </div>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 700; color: #000; line-height: 1.4; text-align: left; margin: 0;">
+                    Passionate about <i style="font-style: italic;">frontier technologies</i> and <i style="font-style: italic;">theoretical innovation</i>.
+                </p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 400; color: #000; line-height: 1.45; text-align: left; margin: 0;">
+                    Exploring the real-world applications of Artificial Intelligence, and leveraging advanced tools such as AI Agents to enhance everyday life and work. Committed to understanding how emerging technologies reshape finance, economic systems, and the future of the world.
+                </p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="card" id="card-4" style="background-image: url('card4-bg.png'); background-size: cover; background-position: center;">
+            <div class="col" style="display: flex; flex-direction: column; justify-content: center; padding: 2.5rem 2rem; gap: 1.5rem;">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; width: 100%;">
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(2rem, 4.5vw, 4rem); font-weight: 900; color: #000; line-height: 1; white-space: nowrap;">Justin Han</span>
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 900; color: #F4B000; line-height: 1; white-space: nowrap; margin-left: auto; padding-left: 1.5rem;">Explorer</span>
+                </div>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 700; color: #000; line-height: 1.4; text-align: left; margin: 0;">
+                    <i style="font-style: italic;">Life</i> and <i style="font-style: italic;">beauty</i> explorer.
+                </p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 400; color: #000; line-height: 1.45; text-align: left; margin: 0;">
+                    As an INFJ / ENFJ, I am drawn to the creation of beauty — through film, sound, painting, photography, composition, and the aesthetics of everyday living. I find joy in running, fitness, cinema, music, and the continuous fulfillment of the self. I value deep communication and human connection, and I hope to create new possibilities together with others.
+                </p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="card" id="card-5" style="background-image: url('card5-bg.png'); background-size: cover; background-position: center;"></div>
+    </section>
+
+    <section class="section section-outro">
+        <div class="bg"></div>
+        <div class="section-content" style="padding: 0.5rem 1rem;">
+            <div class="text-rows" style="gap: 0.25em;">
+                <div class="text-row left">
+                    <div class="row-inner body-text hidden-init">Data Analysis &amp; Visualization</div>
+                </div>
+                <div class="text-row left" style="justify-content: flex-start;">
+                    <img class="chemsex-img hidden-init" src="data-analysis-img.png" alt="" style="width: clamp(80px, 10vw, 150px); height: auto; border-radius: 0.4rem;" />
+                </div>
+                <div class="text-row right">
+                    <div class="row-inner display-font medium-title highlight hidden-init">AI Creation</div>
+                </div>
+                <div class="text-row right" style="justify-content: flex-end;">
+                    <img class="chemsex-img hidden-init" src="chemsex-img.png" alt="" style="width: clamp(80px, 10vw, 150px); height: auto; border-radius: 0.4rem;" />
+                </div>
+                <div class="text-row left">
+                    <div class="row-inner hidden-init" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem;">
+                        <img src="report-writing-img.png" alt="" style="width: clamp(80px, 10vw, 150px); height: auto; border-radius: 0.4rem;" />
+                        <span class="body-text" style="display: block;">Report Writing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-six">
+        <div class="bg"></div>
+        <div class="section-content" style="padding: 0.5rem 1rem;">
+            <div class="text-rows" style="gap: 0.25em;">
+                <div class="text-row left">
+                    <div class="row-inner hidden-init" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+                        <span class="body-text">Competition</span>
+                        <img src="competition-img.jpg" alt="" style="width: clamp(80px, 10vw, 150px); height: auto; border-radius: 0.4rem;" />
+                    </div>
+                </div>
+                <div class="text-row right extra-right">
+                    <div class="row-inner hidden-init" style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem;">
+                        <span class="display-font medium-title highlight">Photography</span>
+                        <img src="photography-img.jpg" alt="" style="width: clamp(80px, 10vw, 150px); height: auto; border-radius: 0.4rem;" />
+                    </div>
+                </div>
+
+                <div class="text-row left extra-left">
+                    <div class="row-inner hidden-init" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+                        <span class="display-font medium-title highlight">Product Design</span>
+                        <img src="product-design-img.png" alt="" style="width: clamp(80px, 10vw, 150px); height: auto; border-radius: 0.4rem;" />
+                    </div>
+                </div>
+                <div class="text-row right">
+                    <div class="row-inner hidden-init" style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem;">
+                        <span class="body-text">Data Organization</span>
+                        <img src="data-org-img.png" alt="" style="width: clamp(80px, 10vw, 150px); height: auto; border-radius: 0.4rem;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-seven">
+        <div class="bg"></div>
+        <div class="section-content">
+            <div class="text-rows">
+                <div class="text-row left">
+                    <div class="row-inner hidden-init" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+                        <span class="display-font big-title highlight" style="font-size: clamp(2.5rem, 7vw, 5rem);">fit &amp; run</span>
+                        <img src="fitrun-img.png" alt="" style="width: clamp(150px, 18vw, 280px); height: auto; border-radius: 0.5rem;" />
+                    </div>
+                </div>
+                <div class="text-row right">
+                    <div class="row-inner hidden-init" style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem;">
+                        <img src="learning-img.png" alt="" style="width: clamp(120px, 14vw, 220px); height: auto; border-radius: 0.5rem;" />
+                        <span class="display-font medium-title highlight">learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-eight">
+        <div class="bg"></div>
+    </section>
+
+    <section class="section section-nine">
+        <canvas id="gl9"></canvas>
+        <img id="centerFigure9" src="center-figure.png" alt="" />
+        <div class="spiral-contact" style="position: absolute; left: clamp(2rem, 6vw, 5rem); top: 50%; transform: translateY(-50%); z-index: 3; font-family: 'Instrument Sans', 'Microsoft YaHei', sans-serif; font-size: clamp(1rem, 1.8vw, 1.5rem); font-weight: 400; font-style: italic; color: #000; opacity: 0; pointer-events: none;">
+            email:18960967832@163.com<br>looking forward to our encounter
+        </div>
+    </section>
+
+    <div class="ls-mask"></div>
+    <div class="ls-grid-overlay">
+        <img src="longscroll-grid.svg" alt="" />
+    </div>
+
+    <script src="/bundle.js"></script>
+    <script src="/cylindrical-spiral-section.js"></script>
+</body>
+</html>
